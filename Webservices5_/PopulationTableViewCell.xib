@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22155" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22131"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="PopulationTableViewCell" rowHeight="110" id="KGk-i7-Jjw" customClass="PopulationTableViewCell" customModule="Webservices5_" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="120" height="110"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="120" height="110"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gGK-6c-OOF">
+                        <rect key="frame" x="10" y="10" width="43.333333333333336" height="30"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="30" id="n3g-M0-Ggy"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qmh-Je-Q6B">
+                        <rect key="frame" x="10" y="50" width="41.333333333333336" height="30"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="qmh-Je-Q6B" firstAttribute="top" secondItem="gGK-6c-OOF" secondAttribute="bottom" constant="10" id="3Bf-mP-5GN"/>
+                    <constraint firstItem="gGK-6c-OOF" firstAttribute="leading" secondItem="qmh-Je-Q6B" secondAttribute="leading" id="Cr1-0w-WsJ"/>
+                    <constraint firstItem="gGK-6c-OOF" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="EOT-RE-RXP"/>
+                    <constraint firstItem="gGK-6c-OOF" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="WpV-Zw-hfh"/>
+                    <constraint firstAttribute="bottom" secondItem="qmh-Je-Q6B" secondAttribute="bottom" constant="10" id="erK-oA-d40"/>
+                    <constraint firstItem="gGK-6c-OOF" firstAttribute="height" secondItem="qmh-Je-Q6B" secondAttribute="height" id="rDw-Ch-S9M"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="populationLabel" destination="qmh-Je-Q6B" id="xMS-6Y-Eid"/>
+                <outlet property="yearLabel" destination="gGK-6c-OOF" id="FFr-0H-PZl"/>
+            </connections>
+            <point key="canvasLocation" x="-145.03816793893128" y="42.95774647887324"/>
+        </tableViewCell>
+    </objects>
+</document>
